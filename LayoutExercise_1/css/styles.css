@@ -1,0 +1,48 @@
+body {
+     width: 90%;
+     margin: 0 auto;
+}
+
+main {
+     overflow: auto;
+}
+
+nav {
+     background-color: black;
+     height: 20px;
+     margin: 0 1%;
+}
+
+article, #feature {
+     margin: 1%;
+     background-color: lightblue;
+     height: 200px;
+}
+
+.column1, .column2, .column3 {
+     width: 31.333%;
+     background-color: tomato;
+     height: 200px;
+     float: left;
+}
+
+footer {
+     background-color: black;
+     height: 20px;
+     margin: 0 1%;
+}
+
+section {
+     display: flex;
+     flex-direction: row;
+}
+
+@media (max-width: 500px) {
+     section {
+          flex-direction: column;
+     }
+
+     .column1, .column2, .column3 {
+          width: 98%;
+     }
+}
